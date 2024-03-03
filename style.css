@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+    height: 10vh;
+    background-color: pink;
+}
+
+.navbar>.pcnav ul {
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 50px;
+    gap: 70px;
+}
+
+.navbar>.pcnav ul li {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn {
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+}
+
+.btn:hover {
+    background-color: rgb(190, 149, 228);
+    cursor: pointer;
+
+}
+
+.hamburger {
+    display: none;
+}
+
+.mobnav {
+    display: none;
+
+}
+
+.mobnav>ul {
+    display: flex;
+    flex-direction: column;
+    padding-top: 40px;
+    gap: 40px;
+    background-color: #4ff4ff;
+}
+
+.mobnav>ul a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.mobnav>ul a {
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: black;
+}
+
+.close-btn {
+    display: none;
+    position: absolute;
+    padding: 30px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+    .pcnav {
+        display: none;
+    }
+
+    .mobnav {
+        /* display: block; */
+        padding: 95px;
+        background-color: #4ff4ff;
+        height: 870px;
+    }
+
+    .btn {
+        padding: 10px 40px;
+    }
+
+    .hamburger {
+        display: block;
+        padding: 30px;
+        right: 40px;
+    }
+
+    .hamburger>img {
+        cursor: pointer;
+    }
+}

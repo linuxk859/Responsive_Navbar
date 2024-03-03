@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="pcnav">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+                <li>About Us</li>
+                <button class="btn">Sign in</button>
+            </ul>
+        </div>
+        <div class="hamburger" onclick="toggleMobileNav()">
+            <img id="ham" src="svg/hamburger.svg" alt="">
+        </div>
+        <div class="close-btn" onclick="toggleMobileNav()" style="display: none;">
+            <img src="svg/close.svg" alt="">
+        </div>
+        <div class="mobnav">
+            <ul>
+                <a href="/"><img src="svg/home.svg" alt=""><li>Home</li></a>
+                <a href="/"><img src="svg/contact-02.svg" alt=""><li>Contact</li></a>
+                <a href="/"><img src="svg/3-d-rotate.svg" alt=""><li>About Us</li></a>
+                <a href="/"><img src="svg/blogger.svg" alt=""><li>Blog</li></a>
+                <button class="btn">Sign in</button>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
